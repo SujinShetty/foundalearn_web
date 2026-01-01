@@ -23,7 +23,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-xl text-gray-600 max-w-3xl mx-auto mb-10"
           >
-            Early screening + personalized learning paths for children aged <span className="font-bold text-primary-700">3–8 years</span>
+            Early screening + personalized learning paths for children aged <span className="font-bold text-primary-700">3–10 years</span>
           </motion.p>
           
           <motion.div
