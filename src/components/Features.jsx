@@ -65,7 +65,7 @@ const learningTracks = [
 
 const parentBenefits = [
     {
-        icon: <span>🇮🇳</span>,
+        icon: <span className='text-2xl leading-none inline-block -translate-y-1'>🇮🇳</span>,
         text: 'Designed for Indian families'
     },
     {
@@ -74,7 +74,7 @@ const parentBenefits = [
     },
     {
         icon: <FaGamepad className="text-primary-600" />,
-        text: 'Child-friendly, game-based'
+        text: 'Child-friendly, interactive learning'
     },
     {
         icon: <FaGraduationCap className="text-primary-600" />,
@@ -152,6 +152,78 @@ const Features = () => {
                                 </div>
                             </motion.div>
                         ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Trust Signals */}
+            <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary-700 via-primary-600 to-indigo-700">
+                <div className="max-w-5xl mx-auto">
+                    <div className="text-center mb-12">
+                        {/* <span className="inline-block bg-white/20 text-white text-sm font-semibold px-4 py-1.5 rounded-full mb-4 tracking-wide uppercase">
+                            Trusted &amp; Science-Backed
+                        </span> */}
+                        <h2 className="text-3xl md:text-4xl font-bold text-white">
+                            Built on Expertise. Designed for Your Child.
+                        </h2>
+                    </div>
+
+                    <div className="grid md:grid-cols-2 gap-8">
+                        {/* Card 1 – Expert Review */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 24 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5 }}
+                            className="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/15 transition-all duration-300"
+                        >
+                            <div className="flex items-start gap-5">
+                                {/* <div className="flex-shrink-0 w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center text-3xl shadow-inner">
+                                    🛡️
+                                </div> */}
+                                <div>
+                                    {/* <div className="flex items-center gap-2 mb-2">
+                                        <span className="bg-emerald-400/30 text-emerald-200 text-xs font-bold px-2.5 py-1 rounded-full tracking-wider uppercase">
+                                            ✔ Clinically Validated
+                                        </span>
+                                    </div> */}
+                                    <h3 className="text-xl font-bold text-white mb-2">
+                                        Expert Review &amp; Child Safety Validation
+                                    </h3>
+                                    <p className="text-white/80 leading-relaxed">
+                                        Reviewed by a <span className="text-white font-semibold">Child Psychiatrist</span> for developmental accuracy, psychological safety, and age-appropriate language.
+                                    </p>
+                                </div>
+                            </div>
+                        </motion.div>
+
+                        {/* Card 2 – Age-Group Analysis */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 24 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: 0.15 }}
+                            className="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/15 transition-all duration-300"
+                        >
+                            <div className="flex items-start gap-5">
+                                {/* <div className="flex-shrink-0 w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center text-3xl shadow-inner">
+                                    📊
+                                </div> */}
+                                <div>
+                                    {/* <div className="flex items-center gap-2 mb-2">
+                                        <span className="bg-sky-400/30 text-sky-200 text-xs font-bold px-2.5 py-1 rounded-full tracking-wider uppercase">
+                                            ✔ Stage-Aware
+                                        </span>
+                                    </div> */}
+                                    <h3 className="text-xl font-bold text-white mb-2">
+                                        Age-Group–Specific Analysis
+                                    </h3>
+                                    <p className="text-white/80 leading-relaxed">
+                                        Screening and results are <span className="text-white font-semibold">customized by age group</span>, reflecting how children naturally grow and learn at each stage.
+                                    </p>
+                                </div>
+                            </div>
+                        </motion.div>
                     </div>
                 </div>
             </section>
